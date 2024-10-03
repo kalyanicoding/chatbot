@@ -7,7 +7,7 @@ export default function InputField({ output, setOutput }) {
   const getOutput = async () => {
     setLoading(true)
     try {
-      const response = await fetch("http://localhost:3000/askedQuestion", {
+      const response = await fetch("https://chatbot-rl46.onrender.com/askedQuestion", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
